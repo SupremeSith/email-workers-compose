@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>E-mail Sender</title>
+    <style>
+        /* O trecho CSS na imagem parecia incompleto/incorreto. 
+           Assumi que você queria 'display: block;' para os labels 
+           e 'width: 400px;' para textarea e input. */
+        label { 
+            display: block; 
+        }
+        textarea, input[type="text"] { 
+            width: 400px; 
+        }
+        /* Adicionei um estilo básico para o body e o h1, 
+           e mantive a classe "container" se você tiver CSS adicional para ela. */
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body class="container">
+    <h1>E-mail Sender</h1>
+    <form action="">
+        <div>
+            <label for="assunto">Assunto</label>
+            <input type="text" name="assunto">
+        </div>
+
+        <div>
+            <label for="mensagem">Mensagem</label>
+            <textarea name="mensagem" cols="50" rows="6"></textarea>
+        </div>
+
+        <div>
+            <button>Enviar !</button>
+        </div>
+    </form>
+</body>
+</html>
